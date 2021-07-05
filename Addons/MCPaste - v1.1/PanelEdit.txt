@@ -1,0 +1,36 @@
+Place the "McPaste.tsx" in " /var/www/pterodactyl/resources/scripts/components/server "
+
+/var/www/pterodactyl/resources/scripts/components/server/ServerConsole.tsx
+
+add import
+
+import McPaste from "@/components/server/McPaste";
+
+
+
+
+/var/www/pterodactyl/resources/scripts/components/server/ServerConsole.tsx
+
+replace
+
+<Can action={[ 'control.start', 'control.stop', 'control.restart' ]} matchAny>
+   <PowerControls/>
+</Can>
+
+With
+
+<div>
+	<Can action={[ 'control.start', 'control.stop', 'control.restart' ]} matchAny>
+		<PowerControls/>
+	</Can>
+	<McPaste />
+</div>
+
+
+
+After all code inserted. Please run this commands:
+
+npm i -g yarn
+cd /var/www/pterodactyl
+yarn install
+yarn run build:production

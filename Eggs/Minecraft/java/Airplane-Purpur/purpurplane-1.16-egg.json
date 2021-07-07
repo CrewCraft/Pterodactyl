@@ -4,7 +4,7 @@
         "version": "PTDL_v1"
     },
     "exported_at": "2020-10-19T23:26:07+00:00",
-    "name": "PurpurPlane",
+    "name": "PurpurPlane 1.16",
     "author": "pengu@crewcraft.gq",
     "description": "An optimized Paper fork",
     "image": "quay.io\/pterodactyl\/core:java-11",

@@ -7,7 +7,7 @@
     "name": "PurpurPlane 1.17",
     "author": "pengu@crewcraft.gq",
     "description": "An optimized Paper fork",
-    "image": "quay.io\/pterodactyl\/core:java-11",
+    "image": "quay.io\/parkervcp\/pterodactyl-images:debian_openjdk-16",
     "images": [
         "quay.io\/pterodactyl\/core:java-11",
         "quay.io\/parkervcp\/pterodactyl-images:debian_openjdk-16"

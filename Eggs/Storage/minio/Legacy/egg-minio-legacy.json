@@ -22,7 +22,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#\r\n#\r\napt update\r\napt install -y wget\r\ncd \/mnt\/server\r\nwget https:\/\/dl.min.io\/server\/minio\/release\/linux-amd64\/archive\/minio.RELEASE.2021-06-14T01-29-23Z\r\nchmod a+x minio.RELEASE.2021-06-14T01-29-23Z\r\nmkdir data\r\nmkdir keys\r\n\r\nwget https:\/\/cdn.discordapp.com\/attachments\/871624314586279937\/871624440184729620\/minio.sh\r\nchmod a+x minio.sh\r\nexport MINIO_ACCESS_KEY=$(cat \/dev\/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)\r\necho $MINIO_ACCESS_KEY > keys\/key.txt\r\nexport MINIO_SECRET_KEY=$(cat \/dev\/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)\r\necho $MINIO_SECRET_KEY > keys\/secret.txt\r\necho done",
+            "script": "#\r\n#\r\napt update\r\napt install -y wget\r\ncd \/mnt\/server\r\nwget https://crewcraft.cc/dbs/minio/Legacysh/minio.RELEASE.2021-06-14T01-29-23Z\r\nchmod a+x minio.RELEASE.2021-06-14T01-29-23Z\r\nmkdir data\r\nmkdir keys\r\n\r\nwget https:\/\/crewcraft.cc\/dbs\/minio\/Legacysh\/minio.sh\r\nchmod a+x minio.sh\r\nexport MINIO_ACCESS_KEY=$(cat \/dev\/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)\r\necho $MINIO_ACCESS_KEY > keys\/key.txt\r\nexport MINIO_SECRET_KEY=$(cat \/dev\/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)\r\necho $MINIO_SECRET_KEY > keys\/secret.txt\r\necho done",
             "container": "debian:buster-slim",
             "entrypoint": "bash"
         }
